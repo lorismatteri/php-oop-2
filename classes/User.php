@@ -1,13 +1,12 @@
 <?php
     class User {
-        public $id;
         public $username;
-        public $image;
-        public $articoli_letti;
-        public $commenti;
+        public $email;
+        public $password;
 
-        public function __construct(int $id, string $username){
-            $this->id = $id;
+        public function __construct(string $username, string $email, string $password){
             $this->username = $username;
+            $this->email = $email;
+            $this->password = $password;
         }
     }
